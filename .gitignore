@@ -3,3 +3,5 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+Advent2025/input/*
+!Advent2025/input/samples/
