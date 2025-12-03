@@ -7,3 +7,4 @@ The real inputs are to be placed in a file directly inside `input/` with the low
 | Problem                                                | Input                                   | Solution                                  |
 |--------------------------------------------------------|-----------------------------------------|-------------------------------------------|
 | [Secret Entrance](https://adventofcode.com/2025/day/1) | [day01](Advent2025/input/samples/day01) | [Day01.cs](Advent2025/Solutions/Day01.cs) |
+| [Gift Shop](https://adventofcode.com/2025/day/2)       | [day02](Advent2025/input/samples/day02) | [Day02.cs](Advent2025/Solutions/Day02.cs) |
