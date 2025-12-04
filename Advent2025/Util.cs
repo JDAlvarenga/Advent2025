@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace Advent2025;
 
 public static class Util
@@ -41,5 +43,20 @@ public static class Util
                 yield return ch;
         }
         yield return EndOfFile;
+    }
+    
+    public static class Directions
+    {
+        public static readonly Complex Up     = new Complex(0, 1);
+        public static readonly Complex Right  = new Complex(1, 0);
+        public static readonly Complex Down   = new Complex(0, -1);
+        public static readonly Complex Left   = new Complex(-1, 0);
+        public static readonly Complex UpRight    = Up + Right;
+        public static readonly Complex DownRight  = Down + Right;
+        public static readonly Complex DownLeft   = Down + Left;
+        public static readonly Complex UpLeft     = Up + Left;
+        
+        public static readonly Complex[] All8 = [Up, UpRight, Right, DownRight, Down, DownLeft, Left, UpLeft]; 
+        public static readonly Complex[] All4 = [Up, Right, Down, Left];
     }
 }
