@@ -22,6 +22,7 @@ public static class Util
     }
     
     public const char Newline = '\n';
+    public const char EndOfFile = '\0';
     public static IEnumerable<char> InputChars<T>(bool sample)
     {
         using var file = Util.GetInputStream<T>(sample);
@@ -39,5 +40,6 @@ public static class Util
             else
                 yield return ch;
         }
+        yield return EndOfFile;
     }
 }
