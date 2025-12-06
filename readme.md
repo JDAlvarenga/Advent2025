@@ -11,3 +11,4 @@ The real inputs are to be placed in a file directly inside `input/` with the low
 | [Lobby](https://adventofcode.com/2025/day/3)               | [day03](Advent2025/input/samples/day03) | [Day03.cs](Advent2025/Solutions/Day03.cs) |
 | [Printing Department](https://adventofcode.com/2025/day/4) | [day04](Advent2025/input/samples/day04) | [Day04.cs](Advent2025/Solutions/Day04.cs) |
 | [Cafeteria](https://adventofcode.com/2025/day/5)           | [day05](Advent2025/input/samples/day05) | [Day05.cs](Advent2025/Solutions/Day05.cs) |
+| [Trash Compactor](https://adventofcode.com/2025/day/6)     | [day06](Advent2025/input/samples/day06) | [Day06.cs](Advent2025/Solutions/Day06.cs) |
