@@ -15,3 +15,8 @@ The real inputs are to be placed in a file directly inside `input/` with the low
 | [Laboratories](https://adventofcode.com/2025/day/7)        | [day07](Advent2025/input/samples/day07) | [Day07.cs](Advent2025/Solutions/Day07.cs) |
 | [Playground](https://adventofcode.com/2025/day/8)          | [day08](Advent2025/input/samples/day08) | [Day08.cs](Advent2025/Solutions/Day08.cs) |
 | [Movie Theater](https://adventofcode.com/2025/day/9)       | [day09](Advent2025/input/samples/day09) | [Day09.cs](Advent2025/Solutions/Day09.cs) |
+| [Factory](https://adventofcode.com/2025/day/10)            | [day10](Advent2025/input/samples/day10) | [Day10.cs](Advent2025/Solutions/Day10.cs) |
+
+## Notes
+
+* Part 2 of [day 10](Advent2025/Solutions/Day10.cs) attempts to solve the problem by recursively finding the minimum button presses to make all joltage values even, then divide by 2. This worked for all but one test case of the provided input. Said test case was solved by modeling the problem as a system of linear equations in an [online tool](https://online-optimizer.appspot.com/?model=builtin:default.mod)
