@@ -4,19 +4,25 @@ namespace Advent2025;
 
 public static class Util
 {
-    public static StreamReader GetInputStream<T>(bool sample = false)
+    public static StreamReader GetInputStream<T>(bool sample = false, bool? part1 = null)
     {
+        var part = part1 switch
+        {
+            null => null,
+            true => "_1",
+            false => "_2"
+        };
         var path = Path.Combine(
             "input",
             sample ? "samples" : string.Empty,
-            $"{typeof(T).Name.ToLower()}"
+            $"{typeof(T).Name.ToLower()}{part}"
         );
         return new StreamReader(path);
     }
 
-    public static IEnumerable<string> InputLines<T>(bool sample = false)
+    public static IEnumerable<string> InputLines<T>(bool sample = false, bool? part1 = null)
     {
-        using var file = GetInputStream<T>(sample);
+        using var file = GetInputStream<T>(sample, part1);
         while (!file.EndOfStream)
         {
             yield return file.ReadLine()!;
